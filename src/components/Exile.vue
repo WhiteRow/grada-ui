@@ -8,7 +8,8 @@
     import Vue from 'vue';
 
     export default Vue.extend({
-        name: 'Link',
+        name: 'Exile',
+
         props: {
             path: {
                 type: String,
