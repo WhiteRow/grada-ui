@@ -1,0 +1,27 @@
+.link {
+    &:hover,
+    &:focus {
+        color: $jaffa
+    }
+
+    &:active {
+        opacity: .5;
+    }
+
+    &--with-icon {
+        display: inline-flex;
+        align-items: center;
+    }
+
+    &--with-icon#{&}--with-icon--left & {
+        &__icon {
+            margin-right: rem(10px);
+        }
+    }
+
+    &--with-icon#{&}--with-icon--right & {
+        &__icon {
+            margin-left: rem(10px);
+        }
+    }
+}

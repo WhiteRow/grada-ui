@@ -59,6 +59,20 @@ p {
     margin-bottom: rem(30px);
 }
 
+a {
+    color: inherit;
+    text-decoration: underline;
+
+    &:hover,
+    &:focus {
+        text-decoration: none;
+    }
+
+    &:focus {
+        outline: 0;
+    }
+}
+
 ul {
     margin-top: 0;
     margin-bottom: rem(30px);
