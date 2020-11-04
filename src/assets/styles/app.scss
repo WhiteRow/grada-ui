@@ -1,0 +1,16 @@
+//* vendors
+@import 'node_modules/normalize.scss/normalize.scss';
+
+//* settings
+@import './config/settings';
+@import './config/mixins';
+@import './config/functions';
+
+//* base
+@import './base/fonts';
+@import './base/generic';
+
+//* components
+@import './components/heading';
+@import './components/list';
+@import './components/container';

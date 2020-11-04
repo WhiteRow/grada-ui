@@ -1,0 +1,24 @@
+.heading {
+    margin-top: 0;
+    margin-bottom: 0;
+
+    &--huge {
+        @include textHuge;
+    }
+
+    &--large {
+        @include textLarge;
+    }
+
+    &--big {
+        @include textBig;
+    }
+
+    &--section {
+        margin-bottom: rem(30px);
+    }
+
+    &--block {
+        margin-bottom: rem(18px);
+    }
+}

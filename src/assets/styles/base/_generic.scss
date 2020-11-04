@@ -1,0 +1,74 @@
+html {
+    font-family: $fontFamily;
+    font-size: rem($fontSizeSmall);
+
+    box-sizing: border-box;
+
+    color: $outerSpace;
+
+    * {
+        box-sizing: inherit;
+
+        &::before,
+        &::after {
+            box-sizing: inherit;
+        }
+    }
+}
+
+h1 {
+    @include textHuge;
+
+    &:not([class]) {
+        margin-top: 0;
+        margin-bottom: rem(30px);
+    }
+}
+
+h2 {
+    @include textLarge;
+
+    &:not([class]) {
+        margin-top: 0;
+        margin-bottom: rem(30px);
+    }
+}
+
+h3 {
+    @include textBig;
+
+    &:not([class]) {
+        margin-top: 0;
+        margin-bottom: rem(30px);
+    }
+}
+
+h4 {
+    @include textNormal;
+
+    &:not([class]) {
+        margin-top: 0;
+        margin-bottom: rem(30px);
+    }
+}
+
+p {
+    @include textSmall;
+
+    margin-top: 0;
+    margin-bottom: rem(30px);
+}
+
+ul {
+    margin-top: 0;
+    margin-bottom: rem(30px);
+
+    &:not([class]) {
+        padding-left: rem(20px);
+    }
+}
+
+li {
+    margin-top: rem(10px);
+    margin-bottom: rem(10px);
+}
