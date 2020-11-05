@@ -1,7 +1,7 @@
 <template>
-    <component :is="tag" class="icon" :class="classes">
-        <slot></slot>
-    </component>
+    <svg class="icon" :name="name" :classes="classes">
+        <use xlink:href="" />
+    </svg>
 </template>
 
 <script lang="ts">
@@ -11,9 +11,8 @@
         name: 'Icon',
 
         props: {
-            tag: {
+            name: {
                 type: String,
-                default: 'svg',
             },
 
             variations: {
