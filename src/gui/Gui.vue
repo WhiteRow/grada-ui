@@ -9,6 +9,8 @@
 
         <GuiTypography />
 
+        <GuiIcons />
+
         <GuiLinks />
 
         <GuiLists />
@@ -18,6 +20,7 @@
 <script lang="ts">
     import Vue from 'vue';
     import GuiTypography from './components/GuiTypography.vue';
+    import GuiIcons from './components/GuiIcons.vue';
     import GuiLinks from './components/GuiLinks.vue';
     import GuiLists from './components/GuiLists.vue';
 
@@ -27,6 +30,7 @@
             GuiTypography,
             GuiLinks,
             GuiLists,
+            GuiIcons
         },
     });
 </script>
