@@ -1,6 +1,6 @@
 .button {
     font-size: rem($fontSizeTiny);
-    font-weight: $fontSemiBold;
+    font-weight: $fontBold;
 
     display: inline-flex;
     align-items: center;
@@ -16,7 +16,7 @@
 
         &:hover,
         &:focus {
-            opacity: .8;
+            opacity: 0.8;
         }
 
         &:active {
@@ -33,7 +33,7 @@
 
         &:hover,
         &:focus {
-            opacity: .8;
+            opacity: 0.8;
         }
 
         &:active {
@@ -43,7 +43,7 @@
 
     &--unfilled {
         transition: background-color $transitionDelayMedium $transitionTimingFuncEIO,
-                    color $transitionDelayMedium $transitionTimingFuncEIO;
+            color $transitionDelayMedium $transitionTimingFuncEIO;
 
         color: $outerSpace;
         border: rem(1px) solid $outerSpace;
@@ -56,7 +56,7 @@
         }
 
         &:active {
-            background-color: rgba($outerSpace, .8)
+            background-color: rgba($outerSpace, 0.8);
         }
     }
 
@@ -68,7 +68,6 @@
 
         width: rem(150px);
         padding: rem($varticalGutter) rem($horizontalGutter);
-
     }
 
     &--medium {
@@ -127,7 +126,7 @@
     &--iconed#{&}--angle-right & {
         &__icon {
             position: absolute;
-            right: rem(20px)
+            right: rem(20px);
         }
     }
 }
