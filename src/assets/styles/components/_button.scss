@@ -1,3 +1,133 @@
 .button {
+    font-size: rem($fontSizeTiny);
+    font-weight: $fontSemiBold;
 
+    display: inline-flex;
+    align-items: center;
+
+    border-radius: rem($borderRadius);
+
+    text-transform: uppercase;
+
+    &--simple {
+        color: $outerSpace;
+        border: 0;
+        background-color: transparent;
+
+        &:hover,
+        &:focus {
+            opacity: .8;
+        }
+
+        &:active {
+            opacity: 1;
+        }
+    }
+
+    &--filled {
+        transition: opacity $transitionDelayMedium $transitionTimingFuncEIO;
+
+        color: $white;
+        border: 0;
+        background: $gradientJaffaHeliotrope;
+
+        &:hover,
+        &:focus {
+            opacity: .8;
+        }
+
+        &:active {
+            opacity: 1;
+        }
+    }
+
+    &--unfilled {
+        transition: background-color $transitionDelayMedium $transitionTimingFuncEIO,
+                    color $transitionDelayMedium $transitionTimingFuncEIO;
+
+        color: $outerSpace;
+        border: rem(1px) solid $outerSpace;
+        background-color: transparent;
+
+        &:hover,
+        &:focus {
+            color: $white;
+            background-color: $outerSpace;
+        }
+
+        &:active {
+            background-color: rgba($outerSpace, .8)
+        }
+    }
+
+    &--small {
+        $varticalGutter: 10px;
+        $horizontalGutter: 3px;
+
+        justify-content: center;
+
+        width: rem(150px);
+        padding: rem($varticalGutter) rem($horizontalGutter);
+
+    }
+
+    &--medium {
+        $varticalGutter: 15px;
+        $horizontalGutter: 3px;
+
+        justify-content: center;
+
+        width: rem(200px);
+        padding: rem($varticalGutter) rem($horizontalGutter);
+    }
+
+    &--content {
+        $varticalGutter: 15px;
+        $horizontalGutter: 3px;
+
+        justify-content: center;
+
+        width: 100%;
+        padding: rem($varticalGutter) rem($horizontalGutter);
+    }
+
+    &--icon {
+        $size: 30px;
+
+        justify-content: center;
+
+        width: rem($size);
+        height: rem($size);
+
+        border-radius: 50%;
+    }
+
+    &--iconed {
+        position: relative;
+
+        align-items: center;
+
+        height: rem(40px);
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    &--iconed#{&}--icon-right & {
+        &__icon {
+            margin-left: rem(10px);
+        }
+    }
+
+    &--iconed#{&}--icon-left & {
+        &__icon {
+            margin-right: rem(10px);
+        }
+    }
+
+    &--iconed#{&}--angle-right & {
+        &__icon {
+            position: absolute;
+            right: rem(20px)
+        }
+    }
 }

@@ -1,6 +1,10 @@
 <template>
-    <button class="button" :class="classes">
+    <button
+        class="button"
+        :class="classes"
 
+    >
+        <slot />
     </button>
 </template>
 
@@ -20,7 +24,7 @@
         computed: {
             classes() {
                 return this.variations.map(variation => {
-                    return `icon--${variation}`;
+                    return `button--${variation}`;
                 });
             },
         },

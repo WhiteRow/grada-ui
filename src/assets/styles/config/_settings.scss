@@ -10,7 +10,7 @@ $heliotrope: #a154f2;
 $deYork: #6fcf97;
 
 //* gradients
-$gradientJaffaHeliotrope: linear-gradient(90deg, #f27a54 0%, #a154f2 186.42%);
+$gradientJaffaHeliotrope: linear-gradient(90deg, $jaffa 0%, $heliotrope 186.42%);
 
 //* fonts
 $fontFamily: 'Montserrat';
@@ -20,6 +20,7 @@ $fontSemiBold: 600;
 $fontBold: 700;
 
 //* font sizes
+$fontSizeBase: 16px;
 $fontSizeTiny: 10px;
 $fontSizeSmall: 14px;
 $fontSizeAverage: 17px;
@@ -34,3 +35,13 @@ $lineHeightAverage: 28px;
 $lineHeightNormal: 30px;
 $lineHeightBig: 50px;
 $lineHeightLarge: 56px;
+
+
+//* border-radius
+$borderRadius: 20px;
+
+//* transitions
+$transitionDelayFast: 0.1s;
+$transitionDelayMedium: 0.2s;
+$transitionDelaySlow: 0.3s;
+$transitionTimingFuncEIO: ease-in-out;

@@ -1,6 +1,6 @@
 html {
     font-family: $fontFamily;
-    font-size: rem($fontSizeSmall);
+    font-size: rem($fontSizeBase);
 
     box-sizing: border-box;
 
@@ -67,10 +67,23 @@ a {
     &:focus {
         text-decoration: none;
     }
+}
 
+a,button {
     &:focus {
         outline: 0;
+
     }
+}
+
+button,
+input {
+    font-family: inherit;
+}
+
+button {
+    cursor: pointer;
+
 }
 
 ul {
